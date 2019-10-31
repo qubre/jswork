@@ -1,24 +1,25 @@
+
 <!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTP-8">
     <title>熊纪的三级联动</title>
 </head>
 <body>
     <div>
         <p>裴波纳契数列</p>
         <div>
-            请输入项: <input id="order" type="text">
+            请输入项:<input id="order" type="text">
             <input type="button" value="计算" onclick="cal()">
         </div>
-        <div>裴波纳契数列的值为<input id='perbonacci' type="text"></div>
+        <div>裴波纳契数列的值为<input id="Perbonacci" type="text"></div>
     </div>
     <div>
-        <p>三级联动</p>
-        <select id="collegeSelect">
+         <p>三级联动</p>
+         <select id="collegeSelect">
             <option value="-1">请选择</option>
         </select>
-        <script id="majorselect"></script>
-        <script id="classSelect"></script>
+        <select id="majorSelect"></select>
+        <select id="classSelect"></select>
     </div>
 </body>
 <script src="index.js"></script>
