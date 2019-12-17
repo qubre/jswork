@@ -1,4 +1,4 @@
-(function(window) {
+(function(window){
     let ShopCart = function(prefix, defCart) {
         Find.prototype.prefix = prefix;
         let cart = new Cart(document.getElementsByClassName(prefix)[0]);
@@ -7,7 +7,6 @@
         }
         cart.updateTotal();
     };
-
     function Cart(obj) {
         this.items = [];
         let find = new Find(obj);
@@ -126,7 +125,6 @@
          this.subtotal.textContent = (this.data.num * this.data.price).toFixed(2);
      }
     };
- 
     function Find(obj) {
         this.obj = obj;
     }
