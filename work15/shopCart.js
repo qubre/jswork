@@ -32,6 +32,7 @@
          let tmp = this.tmp.cloneNode(true);
          let item = new Item(tmp, data);
          let cart = this;
+
          item.check.onclick = function () {
              cart.updateTotal();
          };
@@ -74,6 +75,9 @@
              }
          }
      },
+
+
+
      updateTotal: function() {
          let num = 0, price = 0;
          for (let i in this.items) {
@@ -86,6 +90,7 @@
          this.num.textContent = num;
          this.price.textContent = price.toFixed(2);
      },
+
      checkAll: function() {
          for (let i in this.items) {
              this.items[i].check.checked = true;
@@ -100,6 +105,7 @@
          this.updateTotal();
      }
     };
+
     function Item(tmp, data) {
         let find = new Find(tmp);
         this.check = find.className('check');
